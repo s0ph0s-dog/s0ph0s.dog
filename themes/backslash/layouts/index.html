@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{- partial "head.html" . -}}
+  <meta property="og:title" content="s0ph0s">
+  <meta property="og:url" content="https://s0ph0s.dog/">
+  <meta property="og:type" content="profile">
+  <meta property="og:profile:first_name" content="s0ph0s">
+  <meta property="og:profile:username" content="s0ph0s">
+  <style>
+    html {
+      font-size: 18pt;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: -0.025em;
+    }
+
+    p {
+      margin-top: 1.2rem;
+    }
+
+    ul {
+      margin-top: 2rem;
+      list-style: none;
+      padding: 0;
+    }
+
+    main {
+      max-width: 100% !important;
+    }
+
+    li {
+      height: 25px;
+      margin-bottom: 0.75rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      line-height: 30px;
+    }
+
+    a:hover,
+    a:hover svg {
+      color: #6E3FA3;
+      fill: #6E3FA3;
+    }
+
+    .flex-row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .slashes {
+      height: 1.8em;
+      margin-left: 0.5em;
+      margin-top: 0.1em;
+    }
+
+    .summary {
+      font-weight: 500;
+    }
+
+    .top {
+      padding: 2rem;
+      height: 75vh;
+      width: 100%;
+      display: block;
+    }
+
+    .wedge {
+      /* height: 55%;
+      width: 100%;
+      background: linear-gradient(172deg, rgba(0, 0, 0, 0) 60%, rgba(110, 63, 163, 1) 60.2%);
+      display: block; */
+      /* transform: skewY(-8deg);
+      height: 28%; */
+      background-color: rgba(110, 63, 163, 1);
+      height: 25vh;
+      clip-path: polygon(
+        0 10vw,
+        100% 0,
+        100% 100%,
+        0 100%
+      );
+    }
+
+    svg {
+      width: 25px;
+      height: 25px;
+      fill: #0D0D0D;
+      margin-right: 0.25em;
+      position: relative;
+      top: 0.125rem;
+    }
+
+    @media(prefers-color-scheme: dark) {
+      a {
+        color: #E6E6E6;
+      }
+
+      a:hover,
+      a:hover svg {
+        color: #965EC8;
+        fill: #965EC8;
+      }
+
+      .wedge {
+        background: linear-gradient(172deg, rgba(0, 0, 0, 0) 60%, rgba(150, 94, 200, 1) 60.2%);
+      }
+
+      svg {
+        fill: #E6E6E6;
+      }
+    }
+
+    @media(min-width: 65em) {
+      .top {
+        display: flex;
+        justify-content: center;
+      }
+
+      main {
+        margin-left: -12rem;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      h1 {
+        font-size: 4rem;
+      }
+
+      .slashes {
+        height: 2.8em;
+        margin-left: 1em;
+        margin-top: 0.25em;
+      }
+
+      .elsewhere-label {
+        display: none;
+      }
+
+      li {
+        float: left;
+        margin-right: 0.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top">
+    <main>
+      <div class="flex-row">
+        <h1>{{ .Site.Title }}</h1>
+        <picture>
+          <source srcset="img/Slashes-Dark.svg" media="(prefers-color-scheme: dark)">
+          <img class="slashes" src="img/Slashes-Light.svg" alt="Purple, grey, and gold slashes.">
+        </picture>
+      </div>
+      <p class="summary">
+        Timberwolf / Shiba Inu <br>
+        Computer Scientist <br>
+        Typography Nerd
+      </p>
+      <nav>
+        <ul>
+          <li>
+            <a href="https://t.me/s0ph0s">
+              {{ partial "svg" "telegram" }}
+              <span class="elsewhere-label">Telegram</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/s0ph0s-2">
+              {{ partial "svg" "octocat" }}
+              <span class="elsewhere-label">GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="/about">
+              {{ partial "svg" "silhouette-v2" }}
+              <span class="elsewhere-label">About</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:s0ph0s@protonmail.com">
+              {{ partial "svg" "email" }}
+              <span class="elsewhere-label">Email</span>
+            </a>
+          </li>
+          <li>
+            <a href="/blog">
+              {{ partial "svg" "blog" }}
+              <span class="elsewhere-label">Blog</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </main>
+  </div>
+  <div class="wedge"></div>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "Lunchtype21 Bold";
+    src: url("/font/Lunchtype21-Bold.woff2") format("woff2");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Lunchtype21 Bold", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, sans-serif;
+}
+
+h1, h2, h3, a {
+    color: #6E3FA3;
+}
+
+h1 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h1.title {
+    font-size: 3rem;
+}
+
+h2 {
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+}
+
+main {
+    max-width: 65ch;
+    margin: 0 auto;
+}
+
+header {
+    padding: 1em;
+    background-color: #6E3FA3;
+    color: white;
+}
+
+header h1 {
+    color: white;
+}
+
+p {
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #9D6942;
+}
+
+a:active {
+    color: #3A8812;
+}
+
+figure, img {
+    max-width: 100%;
+}
+
+figure {
+    margin-right: 0.25rem;
+    margin-top: 0.25rem;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.width-3 {
+    max-width: 24%;
+}
+
+.width-6 {
+    max-width: 49%;
+}
+
+footer {
+    padding: 1em;
+    background-color: gray;
+    font-style: italic;
+    margin: 0 auto;
+    height: 4em;
+}
+
+footer p {
+    padding-top: 1em;
+    font-size: 0.75rem;
+}
+
+@media(prefers-color-scheme: dark) {
+    html {
+        background-color: #1A1A1A;
+        color: #E6E6E6;
+    }
+
+    h1, h2, h3, a {
+        color: #965EC8;
+    }
+
+    a:visited {
+        color: #B28F5B;
+    }
+
+    a:active {
+        color: #3A8812;
+    }
+}
