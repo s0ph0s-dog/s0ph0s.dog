@@ -1,11 +1,13 @@
 <header>
-    <h1>s0ph0s</h1>
-    <nav>
-        {{ range .Site.Menus.main }}
-        <a class="nav-link" href="{{ .URL }}">
-        {{ $text := print .Name | safeHTML }}
-        {{ $text }}
-        </a>
-        {{ end }}
-    </nav>
+    <div class="container">
+        <h1 class="site-title">s0ph0s</h1>
+        <nav>
+            {{ range .Site.Menus.main }}
+            <a class="nav-link" href="{{ .URL }}">
+            {{ $text := print .Name | safeHTML }}
+            {{ $text }}
+            </a>
+            {{ end }}
+        </nav>
+    </div>
 </header>

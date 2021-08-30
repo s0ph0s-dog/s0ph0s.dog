@@ -39,15 +39,22 @@ h2 {
     margin-bottom: 0.25em;
 }
 
-main {
-    max-width: 65ch;
-    margin: 0 auto;
-}
-
 header {
     padding: 1em;
+    padding-bottom: 4em;
     background-color: #6E3FA3;
     color: white;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% calc(100% - 8vw),
+        0 100%
+      );
+}
+
+.container {
+    max-width: 65ch;
+    margin: 0 auto;
 }
 
 header h1 {
@@ -101,12 +108,12 @@ footer {
     padding: 1em;
     background-color: gray;
     font-style: italic;
-    margin: 0 auto;
     height: 4em;
 }
 
 footer p {
     padding-top: 1em;
+    margin: 0 auto;
     font-size: 0.75rem;
 }
 
@@ -126,5 +133,11 @@ footer p {
 
     a:active {
         color: #3A8812;
+    }
+}
+
+@media(min-width: 65em) {
+    .site-title {
+        font-size: 3em;
     }
 }
