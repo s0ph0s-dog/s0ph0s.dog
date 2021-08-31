@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Lunchtype21 Bold";
     src: url("/font/Lunchtype21-Bold.woff2") format("woff2");
+    font-display: swap;
 }
 
 * {
