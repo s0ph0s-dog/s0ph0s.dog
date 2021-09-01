@@ -2,9 +2,11 @@
 	--purple-light: #6E3FA3;
 	--purple-dark: #965EC8;
 	--gold-light: #9D6942;
-	--gold-dark: #B28F5B;
+	--gold-dark: #bb822d;
 	--green-light: #3A8812;
 	--green-dark: #3A8812;
+	--secondary-light: #868686;
+	--secondary-dark: #5A5A5A;
 	--fg-light: #000000;
 	--fg-dark: #E6E6E6;
 	--bg-light: #FFFFFF;
@@ -54,6 +56,7 @@ h1 {
 }
 
 h1.title {
+	margin-top: 0;
 	font-size: 3rem;
 }
 
@@ -63,13 +66,33 @@ h2 {
 }
 
 header {
-	padding-bottom: 4em;
+	padding-bottom: 1em;
 	background-color: var(--purple-light);
 	color: var(--fg-dark);
 	clip-path: polygon(0 0,
 			100% 0,
 			100% calc(100% - 8vw),
 			0 100%);
+}
+
+header nav a,
+header nav a:visited {
+	font-weight: bold;
+	text-decoration: none;
+	margin-left: 1em;
+	color: var(--fg-dark);
+}
+
+header nav a:active {
+	color: white;
+}
+
+header nav a:first-child {
+	margin-left: 0;
+}
+
+header nav a:hover {
+	text-decoration: underline;
 }
 
 .container {
@@ -85,10 +108,12 @@ header h1.site-title {
 
 .slashes {
 	vertical-align: baseline;
-	height: 0.7em;
+	height: 0.85em;
 	/* TODO: delete this once Safari has aspect-ratio support */
-	width: 0.86em;
+	width: 1.05em;
 	aspect-ratio: 119 / 96;
+	position: relative;
+	bottom: -2px;
 }
 
 p {
@@ -136,7 +161,7 @@ figcaption {
 }
 
 footer {
-	background-color: gray;
+	background-color: var(--secondary-light);
 	font-style: italic;
 	height: 10em;
 	clip-path: polygon(0% 8vw,
@@ -147,10 +172,17 @@ footer {
 
 footer p {
 	position: relative;
-	bottom: -8em;
+	bottom: -5em;
 	font-size: 0.75rem;
 	margin-bottom: 0;
 }
+
+/*img:hover {
+	  color: #424242;
+	  transition: all .1s ease-in;
+	  opacity: 1;
+	  transform: scale(1.4);
+	}*/
 
 @media(prefers-color-scheme: dark) {
 	html, body {
@@ -176,10 +208,28 @@ footer p {
 	a:active {
 		color: var(--green-dark);
 	}
+
+	footer {
+		background-color: var(--secondary-dark);
+	}
 }
 
 @media(min-width: 65em) {
 	.site-title {
 		font-size: 3em;
+	}
+
+	header {
+		padding-bottom: 2em;
+	}
+
+	footer p {
+		bottom: -7em;
+	}
+}
+
+@media(min-width: 85em) {
+	header {
+		padding-bottom: 4em;
 	}
 }
