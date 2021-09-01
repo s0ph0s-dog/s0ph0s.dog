@@ -10,7 +10,7 @@ draft = "true"
 layout = "about"
 +++
 
-I'm a 23-year-old timberwolf who lives in upstate New York.  My pronouns are he/him/his.  For work, I write code, usually Python or C#.  For fun, I _also_ write code, as well as pretend to be a graphic designer, administer OpenBSD and Linux servers, and read a lot of books.
+I'm a 23-year-old timberwolf who lives in upstate New York.  My pronouns are he/him/his.  For work, I write code, usually Python or C#.  For fun, I _also_ write code, as well as administer OpenBSD and Linux servers, pretend to be a graphic designer, and read a lot of books.
 
 
 # What I Do
@@ -22,9 +22,9 @@ Outside of regular employment, I volunteer as a software developer and occasiona
 
 # What I Enjoy
 
-If I had to pick a different career path, I would definitely be a graphic designer.  It's super fun to look at information and try to find an easily-understandable, eye-catching way to present it.  Most of what I do tends to come out looking fairly Swiss-modern, since I lack the artistic talent to produce things with more embellishment.
-
 I run a home lab to learn more about OpenBSD and Linux systems administration.  I find that it's extremely beneficial to my software engineering skills to learn about what's going on beneath the software that I write, plus it's kinda fun to mess around with servers!
+
+If I had to pick a different career path, I would definitely be a graphic designer.  It's super fun to look at information and try to find an easily-understandable, eye-catching way to present it.  Most of what I do tends to come out looking fairly Swiss-modern, since I lack the artistic talent to produce things with more embellishment.
 
 Away from my desk, I listen to a frightening amount of podcasts, try to read as many books as I can, and go for long runs to stave off the muscular atrophy and weight gain that tends to come with tech careers.  If you're looking for podcast recommendations, [I have a tag for that][podcast-recommendations]!  I also blog about [interesting books that I've read][books].  And whenever I can, I make sure to snuggle with my friends—particularly my adorable dragon boyfriend.
 
