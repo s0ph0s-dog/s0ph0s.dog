@@ -1,13 +1,17 @@
 <header>
-    <div class="container">
-        <h1 class="site-title">s0ph0s</h1>
-        <nav>
-            {{ range .Site.Menus.main }}
-            <a class="nav-link" href="{{ .URL }}">
-            {{ $text := print .Name | safeHTML }}
-            {{ $text }}
-            </a>
-            {{ end }}
-        </nav>
-    </div>
+	<div class="container">
+			<h1 class="site-title">{{ .Site.Title }}
+			<picture>
+				<source srcset="/img/Slashes-Dark.svg" media="(prefers-color-scheme: dark)">
+				<img width="119" height="96" class="slashes" src="/img/Slashes-Light.svg" alt="Purple, grey, and gold slashes.">
+			</picture></h1>
+		<nav>
+			{{ range .Site.Menus.main }}
+			<a class="nav-link" href="{{ .URL }}">
+				{{ $text := print .Name | safeHTML }}
+				{{ $text }}
+			</a>
+			{{ end }}
+		</nav>
+	</div>
 </header>
