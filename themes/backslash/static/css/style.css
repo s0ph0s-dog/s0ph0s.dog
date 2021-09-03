@@ -1,6 +1,7 @@
 :root {
 	--purple-light: #6E3FA3;
 	--purple-dark: #965EC8;
+	--purple-dark-highcontrast: #C394ED;
 	--gold-light: #9D6942;
 	--gold-dark: #bb822d;
 	--green-light: #3A8812;
@@ -8,10 +9,11 @@
 	--secondary-light: #868686;
 	--secondary-dark: #5A5A5A;
 	--fg-light: #000000;
-	--fg-dark: #E6E6E6;
+	--fg-dark: #FFFFFF;
 	--bg-light: #FFFFFF;
-	--bg-dark: #1A1A1A;
+	--bg-dark: #131313;
 }
+
 @font-face {
 	font-family: "Lunchtype21 Bold";
 	src: url("/font/Lunchtype21-Bold.woff2") format("woff2");
@@ -66,7 +68,7 @@ h2 {
 }
 
 header {
-	padding-bottom: 1em;
+	padding-bottom: 2em;
 	background-color: var(--purple-light);
 	color: var(--fg-dark);
 	clip-path: polygon(0 0,
@@ -79,12 +81,12 @@ header nav a,
 header nav a:visited {
 	font-weight: bold;
 	text-decoration: none;
-	margin-left: 1em;
+	margin-left: 0.75em;
 	color: var(--fg-dark);
 }
 
 header nav a:active {
-	color: white;
+	color: var(--gold-light);
 }
 
 header nav a:first-child {
@@ -116,7 +118,7 @@ header h1.site-title {
 	bottom: -2px;
 }
 
-p {
+p, ul {
 	line-height: 1.2;
 	margin-bottom: 1rem;
 }
@@ -147,17 +149,10 @@ figcaption {
 	font-style: italic;
 }
 
-.flex {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.width-3 {
-	max-width: 24%;
-}
-
-.width-6 {
-	max-width: 49%;
+.grid-2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.25em;
 }
 
 footer {
@@ -185,7 +180,9 @@ footer p {
 	}*/
 
 @media(prefers-color-scheme: dark) {
-	html, body {
+
+	html,
+	body {
 		color: var(--fg-dark);
 		background-color: var(--bg-dark);
 	}
@@ -194,11 +191,15 @@ footer p {
 	h2,
 	h3,
 	a {
-		color: var(--purple-dark);
+		color: var(--purple-dark-highcontrast);
 	}
 
 	header {
-		background-color: var(--purple-dark);
+		background-color: var(--purple-light);
+	}
+
+	header nav a:active {
+		color: var(--gold-dark);
 	}
 
 	a:visited {

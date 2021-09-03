@@ -12,6 +12,7 @@ layout = "about"
 
 I'm a 23-year-old timberwolf who lives in upstate New York.  My pronouns are he/him/his.  For work, I write code, usually Python or C#.  For fun, I _also_ write code, as well as administer OpenBSD and Linux servers, pretend to be a graphic designer, and read a lot of books.
 
+<!--more-->
 
 # What I Do
 
@@ -47,38 +48,34 @@ Sometimes, four limbs isn't enough.  I also have a taur variant, although the bo
 
 ## References
 
-{{< figure
-	src="/img/silver_edge_refsheet.png"
-	link="gallery/silver_edge_refsheet.html"
+{{< singlefig
+	src="img/silver_edge_refsheet.png"
+	link="/gallery/silver_edge_refsheet/"
 	alt="Character reference sheet depicting two full-body poses and two expression headshots.  The full-body poses show fur patterns on the front and back of the wolf.  The first expression headshot shows the wolf giving a sultry stare while licking his chops.  The second expression headshot shows the wolf blushing and splaying his ears."
 	caption="Reference sheet by [Silver Edge](https://furaffinity.net/user/silveredge)."
 	>}}
 
-{{< flex >}}
-{{< figure
-	class="width-6"
+{{< grid >}}
+{{< singlefig
 	src="img/wallpaper2you_154840.jpg"
 	caption="Wolf reference № 1 [(source)](https://www.desktopbackground.org/wallpaper/other-leader-white-quotes-timber-lone-wolf-pack-wolves-black-710373)"
 	>}}
 
-{{< figure
-	class="width-6"
+{{< singlefig
 	src="img/497901-black-wolf-wallpapers-1920x1200-samsung.jpg"
 	caption="Wolf reference № 2 [(source)](https://wallpapersafari.com/w/DW6riz)"
 	>}}
 
-{{< figure
-	class="width-6"
+{{< singlefig
 	src="img/49846223821_1f3b5f6f57_b.jpg"
 	caption="Wolf reference № 3 [(source: My Planet Experience on Flickr)](https://www.flickr.com/photos/myplanetexperience/49846223821)"
 	>}}
 
-{{< figure
-	class="width-6"
+{{< singlefig
 	src="img/1200px-Canis_lupus_lycaon_qtl4.jpg"
 	caption="Wolf reference № 4 [(source: Quartl on Wikipedia)](https://en.wikipedia.org/wiki/File:Canis_lupus_lycaon_qtl4.jpg)"
 	>}}
-{{</ flex >}}
+{{</ grid >}}
 
 Features taken from these wolf reference images:
 
