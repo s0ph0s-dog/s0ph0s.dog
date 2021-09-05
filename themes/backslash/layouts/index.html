@@ -39,7 +39,7 @@
 
     li {
       height: 25px;
-      margin-bottom: 0.625rem;
+      margin-bottom: 0.5rem;
     }
 
     a {
@@ -62,12 +62,12 @@
 
     .summary {
       font-weight: 500;
-      margin: 1em 0 2em 0;
+      margin: 1em 0 1em 0;
     }
 
     .top {
       padding: 2rem;
-      height: 80vh;
+      height: 78vh;
       min-height: 25em;
       width: 100%;
       display: block;
@@ -75,7 +75,7 @@
 
     .wedge {
       background-color: #6E3FA3;
-      height: 20vh;
+      height: 22vh;
       clip-path: polygon(0% 8vw,
           100% 0%,
           100% 100%,
@@ -117,10 +117,16 @@
       }
     }
 
-    @media(min-width: 65em) {
+    @media(min-width: 50em) {
       .top {
         display: flex;
         justify-content: center;
+        height: 65vh;
+        min-height: 15em;
+      }
+
+      .wedge {
+        height: 35vh;
       }
 
       main {
@@ -168,13 +174,13 @@
         <ul>
           {{ range .Site.Menus.main }}
           <li>
-            <a href="{{ .URL }}">
+            {{- $text := print .Name | safeHTML -}}
+            <a href="{{ .URL }}" title="{{ $text }}">
               {{ with .Pre }}
               {{ partial "svg" . }}
               {{ else }}
               {{ partial "svg" "questionmark" }}
               {{ end }}
-              {{- $text := print .Name | safeHTML -}}
               <span class="elsewhere-label">{{- $text -}}</span>
             </a>
           </li>
@@ -185,13 +191,13 @@
         <ul>
           {{ range .Site.Menus.contact }}
           <li>
-            <a href="{{ .URL }}">
+            {{- $text := print .Name | safeHTML -}}
+            <a href="{{ .URL }}" title="{{ $text }}">
               {{ with .Pre }}
               {{ partial "svg" . }}
               {{ else }}
               {{ partial "svg" "questionmark" }}
               {{ end }}
-              {{- $text := print .Name | safeHTML -}}
               <span class="elsewhere-label">{{- $text -}}</span>
             </a>
           </li>
