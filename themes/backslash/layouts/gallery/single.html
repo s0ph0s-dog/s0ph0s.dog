@@ -13,7 +13,7 @@
 		<a class="button" href="{{ .Page.Params.main_image_source }}">Source</a>
 	</span>
 	{{ with .NextInSection }}
-	<a class="button" href="{{ .Permalink }}">Newer →</a>
+	<a class="button" href="{{ .RelPermalink }}">Newer →</a>
 	{{ else }}
 	<span class="placeholder button"></span>
 	{{ end }}
