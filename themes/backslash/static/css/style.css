@@ -155,6 +155,10 @@ figcaption {
 	gap: 0.25em;
 }
 
+.height-fix {
+	min-height: calc(100vh - 10em);
+}
+
 footer {
 	background-color: var(--secondary-light);
 	font-style: italic;
