@@ -1,10 +1,11 @@
 <header>
 	<div class="container">
-			<h1 class="site-title">{{ .Site.Title }}
+		<h1 class="site-title">{{ .Site.Title }}
 			<picture>
 				<source srcset="/img/Slashes-OutlineDark.svg" media="(prefers-color-scheme: dark)">
 				<img width="119" height="96" class="slashes" src="/img/Slashes-OutlineLight.svg" alt="Purple, grey, and gold slashes.">
-			</picture></h1>
+			</picture>
+		</h1>
 		<nav>
 			{{ range .Site.Menus.main }}
 			<a class="nav-link" href="{{ .URL }}">
