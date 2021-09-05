@@ -23,8 +23,12 @@
       margin-top: 1.2rem;
     }
 
+    nav ul {
+      width: 100%;
+      display: block;
+    }
+
     ul {
-      margin-top: 2rem;
       list-style: none;
       padding: 0;
     }
@@ -35,13 +39,14 @@
 
     li {
       height: 25px;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.625rem;
     }
 
     a {
       text-decoration: none;
       color: black;
       line-height: 30px;
+      font-weight: bold;
     }
 
     a:hover,
@@ -57,18 +62,20 @@
 
     .summary {
       font-weight: 500;
+      margin: 1em 0 2em 0;
     }
 
     .top {
       padding: 2rem;
-      height: 75vh;
+      height: 80vh;
+      min-height: 25em;
       width: 100%;
       display: block;
     }
 
     .wedge {
       background-color: #6E3FA3;
-      height: 25vh;
+      height: 20vh;
       clip-path: polygon(0% 8vw,
           100% 0%,
           100% 100%,
@@ -131,8 +138,13 @@
         display: none;
       }
 
+      ul {
+        display: flex;
+        justify-content: flex-start;
+      }
+
       li {
-        float: left;
+        display: inline;
         margin-right: 0.5rem;
       }
     }
@@ -154,36 +166,36 @@
       </p>
       <nav>
         <ul>
+          {{ range .Site.Menus.main }}
           <li>
-            <a aria-label="s0ph0s on Telegram" href="https://t.me/s0ph0s">
-              {{ partial "svg" "telegram" }}
-              <span class="elsewhere-label">Telegram</span>
+            <a href="{{ .URL }}">
+              {{ with .Pre }}
+              {{ partial "svg" . }}
+              {{ else }}
+              {{ partial "svg" "questionmark" }}
+              {{ end }}
+              {{- $text := print .Name | safeHTML -}}
+              <span class="elsewhere-label">{{- $text -}}</span>
             </a>
           </li>
+          {{ end }}
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          {{ range .Site.Menus.contact }}
           <li>
-            <a aria-label="s0ph0s-2 on GitHub" href="https://github.com/s0ph0s-2">
-              {{ partial "svg" "octocat" }}
-              <span class="elsewhere-label">GitHub</span>
+            <a href="{{ .URL }}">
+              {{ with .Pre }}
+              {{ partial "svg" . }}
+              {{ else }}
+              {{ partial "svg" "questionmark" }}
+              {{ end }}
+              {{- $text := print .Name | safeHTML -}}
+              <span class="elsewhere-label">{{- $text -}}</span>
             </a>
           </li>
-          <li>
-            <a aria-label="About" href="/about">
-              {{ partial "svg" "silhouette-v2" }}
-              <span class="elsewhere-label">About</span>
-            </a>
-          </li>
-          <li>
-            <a aria-label="Email" href="mailto:s0ph0s@protonmail.com">
-              {{ partial "svg" "email" }}
-              <span class="elsewhere-label">Email</span>
-            </a>
-          </li>
-          <li>
-            <a aria-label="Blog" href="/blog">
-              {{ partial "svg" "blog" }}
-              <span class="elsewhere-label">Blog</span>
-            </a>
-          </li>
+          {{ end }}
         </ul>
       </nav>
     </main>

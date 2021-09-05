@@ -7,20 +7,41 @@ theme = 'backslash'
   [[menu.main]]
     name = "Home"
     url = "/"
+    pre = "home"
     weight = 1
   [[menu.main]]
     name = "About"
     url = "/about/"
+    pre = "silhouette-v2"
     weight = 2
   [[menu.main]]
     name = "Blog"
     url = "/blog/"
+    pre = "blog"
     weight = 3
   [[menu.main]]
     name = "Gallery"
     url = "/gallery/"
+    pre = "photo-landscape"
     weight = 4
   [[menu.main]]
     name = "Tags"
     url = "/tags/"
+    pre = "tag"
     weight = 5
+
+  [[menu.contact]]
+    name = "Telegram"
+    url = "https://t.me/s0ph0s"
+    pre = "telegram"
+    weight = 1
+  [[menu.contact]]
+    name = "GitHub"
+    url = "https://github.com/s0ph0s-2"
+    pre = "octocat"
+    weight = 2
+  [[menu.contact]]
+    name = "Email"
+    url = "mailto:s0ph0s@protonmail.com"
+    pre = "email"
+    weight = 3
