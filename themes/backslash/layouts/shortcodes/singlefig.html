@@ -1,94 +1,20 @@
-{{/* get file that matches the filename as specified as src="" in shortcode */}}
-{{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
-
-{{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
-
-{{ $microw := default "250x" }}
-{{ $tinyw := default "500x" }}
-{{ $smallw := default "800x" }}
-{{ $mediumw := default "1200x" }}
-{{ $largew := default "1500x" }}
-
-{{ $webp_mode := default (.Get "webp_mode") "picture" }}
-{{/* resize the src image to the given sizes */}}
-
-{{ .Scratch.Set "micro-same" ($src.Resize $microw) }}
-{{ .Scratch.Set "tiny-same" ($src.Resize $tinyw) }}
-{{ .Scratch.Set "small-same" ($src.Resize $smallw) }}
-{{ .Scratch.Set "medium-same" ($src.Resize $mediumw) }}
-{{ .Scratch.Set "large-same" ($src.Resize $largew) }}
-
-{{ .Scratch.Set "micro-webp" ($src.Resize (printf "%s webp %s" $microw $webp_mode)) }}
-{{ .Scratch.Set "tiny-webp" ($src.Resize (printf "%s webp %s" $tinyw $webp_mode)) }}
-{{ .Scratch.Set "small-webp" ($src.Resize (printf "%s webp %s" $smallw $webp_mode)) }}
-{{ .Scratch.Set "medium-webp" ($src.Resize (printf "%s webp %s" $mediumw $webp_mode)) }}
-{{ .Scratch.Set "large-webp" ($src.Resize (printf "%s webp %s" $largew $webp_mode)) }}
-
-{{/* add the processed images to the scratch */}}
-
-{{ $micro_s := .Scratch.Get "micro-same" }}
-{{ $tiny_s := .Scratch.Get "tiny-same" }}
-{{ $small_s := .Scratch.Get "small-same" }}
-{{ $medium_s := .Scratch.Get "medium-same" }}
-{{ $large_s := .Scratch.Get "large-same" }}
-
-{{ $micro_w := .Scratch.Get "micro-webp" }}
-{{ $tiny_w := .Scratch.Get "tiny-webp" }}
-{{ $small_w := .Scratch.Get "small-webp" }}
-{{ $medium_w := .Scratch.Get "medium-webp" }}
-{{ $large_w := .Scratch.Get "large-webp" }}
-
-{{/* only use images smaller than or equal to the src (original) image size, as Hugo will upscale small images */}}
-{{/* set the sizes attribute to (min-width: 35em) 1200px, 100vw unless overridden in shortcode */}}
-
 <figure>
 	{{- if .Get "link" -}}
 	<a href="{{ .Get "link" }}">
   {{- end -}}
-	<picture>
-		<source
-		  {{ with .Get "sizes" }}sizes='{{.}}'{{ else }}sizes="(min-width: 35em) 1200px, 100vw"{{ end }}
-			  srcset='
-			  {{- if ge $src.Width "250" -}}
-				{{- with $micro_w.RelPermalink -}}{{.}} 200w{{- end -}}
-			  {{- end -}}
-				{{- if ge $src.Width "500" -}}
-				{{- with $tiny_w.RelPermalink -}}, {{.}} 500w{{- end -}}
-				{{- end -}}
-			  {{- if ge $src.Width "800" -}}
-				{{- with $small_w.RelPermalink -}}, {{.}} 800w{{- end -}}
-			  {{- end -}}
-			  {{- if ge $src.Width "1200" -}}
-				{{- with $medium_w.RelPermalink -}}, {{.}} 1200w{{- end -}}
-			  {{- end -}}
-			  {{- if ge $src.Width "1500" -}}
-				{{- with $large_w.RelPermalink -}}, {{.}} 1500w {{- end -}}
-			  {{- end -}}'>
-		<img
-		  {{ with .Get "sizes" }}sizes='{{.}}'{{ else }}sizes="(min-width: 35em) 1200px, 100vw"{{ end }}
-		  srcset='
-		  {{- if ge $src.Width "250" -}}
-			{{- with $micro_s.RelPermalink -}}{{.}} 250w{{- end -}}
-		  {{- end -}}
-			{{- if ge $src.Width "500" -}}
-			{{- with $tiny_s.RelPermalink -}}, {{.}} 500w{{- end -}}
-			{{- end -}}
-		  {{- if ge $src.Width "800" -}}
-			{{- with $small_s.RelPermalink -}}, {{.}} 800w{{- end -}}
-		  {{- end -}}
-		  {{- if ge $src.Width "1200" -}}
-			{{- with $medium_s.RelPermalink -}}, {{.}} 1200w{{- end -}}
-		  {{- end -}}
-		  {{- if ge $src.Width "1500" -}}
-			{{- with $large_s.RelPermalink -}}, {{.}} 1500w {{- end -}}
-		  {{- end -}}, {{ $src }}'
-		  {{ if .Get (print $medium_s) }}
-			src="{{ $medium_s.RelPermalink }}"
-		  {{ else }}
-			src="{{ $src.RelPermalink }}"
-		  {{ end }}
-		  {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}>
-	</picture>
+
+	{{ .Scratch.Set "src" (.Get "src") }}
+	{{ with .Get "alt" }}
+	{{ $.Scratch.Set "alt" . }}
+	{{ end }}
+	{{ with .Get "sizes" }}
+	{{ $.Scratch.Set "sizes" }}
+	{{ end }}
+	{{ with .Get "webp_mode" }}
+	{{ $.Scratch.Set "webp_mode" }}
+	{{ end }}
+  {{ partial "picture" . }}
+
 	{{- if .Get "link" }}</a>{{ end -}}
   {{ with .Get "caption" }}<figcaption>{{- . | markdownify -}}</figcaption>{{ end }}
 </figure>
