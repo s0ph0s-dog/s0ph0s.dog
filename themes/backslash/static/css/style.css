@@ -172,12 +172,32 @@ footer p {
 	margin-bottom: 0;
 }
 
-/*img:hover {
-	  color: #424242;
-	  transition: all .1s ease-in;
-	  opacity: 1;
-	  transform: scale(1.4);
-	}*/
+.gallery-buttons {
+	width: 100%;
+	margin-top: 1em;
+	display: flex;
+	justify-content: space-between;
+}
+
+.placeholder.button {
+	height: 0;
+	background-color: rgba(0,0,0,0);
+}
+
+.button,
+.button:visited {
+	display: inline-block;
+	color: var(--fg-dark);
+	background-color: var(--purple-light);
+	padding: 0.5em;
+	text-decoration: none;
+	text-align: center;
+	width: 6em;
+}
+
+.gallery-title {
+	margin-top: 0.5em;
+}
 
 @media(prefers-color-scheme: dark) {
 

@@ -1,0 +1,24 @@
+{{ define "main" }}
+{{ .Scratch.Set "src" .Page.Params.main_image }}
+{{ .Scratch.Set "alt" .Page.Params.main_image_alttext }}
+{{ partial "picture" . }}
+<div class="gallery-buttons">
+	{{ with .PrevInSection }}
+	<a class="button" aria-role="button" href="{{ .Permalink }}">← Older</a>
+	{{ else }}
+	<span class="placeholder button"></span>
+	{{ end }}
+	<span class="centered">
+		<a class="button" href="{{ .Page.Params.main_image }}">Full Size</a>
+		<a class="button" href="{{ .Page.Params.main_image_source }}">Source</a>
+	</span>
+	{{ with .NextInSection }}
+	<a class="button" href="{{ .Permalink }}">Newer →</a>
+	{{ else }}
+	<span class="placeholder button"></span>
+	{{ end }}
+</div>
+<h1 class="gallery-title">{{ .Title }}</h1>
+{{ partial "metadata" . }}
+{{ .Content }}
+{{ end }}
