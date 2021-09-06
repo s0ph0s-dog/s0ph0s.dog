@@ -22,7 +22,7 @@ theme = 'backslash'
   [[menu.main]]
     name = "Gallery"
     url = "/gallery/"
-    pre = "photo-landscape"
+    pre = "photo-landscape-v2"
     weight = 4
   [[menu.main]]
     name = "Tags"
