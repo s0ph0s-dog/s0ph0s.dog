@@ -4,7 +4,7 @@
 {{ partial "picture" . }}
 <div class="gallery-buttons">
 	{{ with .PrevInSection }}
-	<a class="button" aria-role="button" href="{{ .Permalink }}">← Older</a>
+	<a class="button" aria-role="button" href="{{ .RelPermalink }}">← Older</a>
 	{{ else }}
 	<span class="placeholder button"></span>
 	{{ end }}
