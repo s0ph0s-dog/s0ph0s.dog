@@ -1,0 +1,12 @@
+{{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Scratch.Get "src")) }}
+
+{{ $thumbnail_s := $src.Resize "290x" }}
+{{ $thumbnail_w := $src.Resize "290x webp" }}
+
+<picture>
+	<source	srcset='{{- $thumbnail_w.RelPermalink }} 290w'>
+	<img
+		width="{{ $thumbnail_s.Width }}"
+		height="{{ $thumbnail_s.Height }}"
+		src="{{ $thumbnail_s.RelPermalink }}" />
+</picture>

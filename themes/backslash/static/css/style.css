@@ -3,11 +3,11 @@
 	--purple-dark: #965EC8;
 	--purple-dark-highcontrast: #C394ED;
 	--gold-light: #9D6942;
-	--gold-dark: #bb822d;
+	--gold-dark: #e5bb5c;
 	--green-light: #3A8812;
 	--green-dark: #3A8812;
-	--secondary-light: #c1c1c1;
-	--secondary-dark: #5A5A5A;
+	--secondary-light: #D7D7D7;
+	--secondary-dark: #2E2E2E;
 	--fg-light: #000000;
 	--fg-dark: #FFFFFF;
 	--bg-light: #FFFFFF;
@@ -54,7 +54,7 @@ a {
 
 h1 {
 	margin-top: 1em;
-	margin-bottom: 0.5em;
+	margin-bottom: 0.25em;
 }
 
 h1.title {
@@ -118,6 +118,10 @@ header h1.site-title {
 	bottom: -2px;
 }
 
+.metadata {
+	font-size: 0.85rem;
+}
+
 p, ul, pre {
 	line-height: 1.2;
 	margin-bottom: 1rem;
@@ -138,6 +142,7 @@ a:active {
 figure,
 img {
 	max-width: 100%;
+	height: auto;
 }
 
 figure {
@@ -174,6 +179,15 @@ footer p {
 	bottom: -5em;
 	font-size: 0.75rem;
 	margin-bottom: 0;
+}
+
+.gallery-list-item a:visited h3 {
+	/* without this, the links are always header-colored */
+	color: var(--gold-light);
+}
+
+.gallery-list-item img {
+	margin-bottom: 0.5em;
 }
 
 .gallery-buttons {
@@ -234,6 +248,11 @@ footer p {
 	a:active {
 		color: var(--green-dark);
 	}
+
+	.gallery-list-item a:visited h3 {
+		color: var(--gold-dark);
+	}
+
 
 	footer {
 		background-color: var(--secondary-dark);
