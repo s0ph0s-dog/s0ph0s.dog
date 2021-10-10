@@ -1,12 +1,10 @@
-{{/* TODO: move this into a template (?) so I can use it in singlefig and in the gallery layout */}}
-
 {{/* get file that matches the filename as specified as src="" in scratch */}}
 {{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Scratch.Get "src")) }}
 
 {{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
 
-{{ $microw := default "250x" }}
-{{ $tinyw := default "500x" }}
+{{ $microw := default "290x" }}
+{{ $tinyw := default "587x" }}
 {{ $smallw := default "800x" }}
 {{ $mediumw := default "1200x" }}
 {{ $largew := default "1500x" }}
@@ -47,11 +45,11 @@
 	<source
 	  {{ with .Scratch.Get "sizes" }}sizes='{{.}}'{{ else }}sizes="(min-width: 35em) 1200px, 100vw"{{ end }}
 		srcset='
-		{{- if ge $src.Width "250" -}}
-		{{- with $micro_w.RelPermalink -}}{{.}} 200w{{- end -}}
+		{{- if ge $src.Width "290" -}}
+		{{- with $micro_w.RelPermalink -}}{{.}} 290w{{- end -}}
 		{{- end -}}
-		{{- if ge $src.Width "500" -}}
-		{{- with $tiny_w.RelPermalink -}}, {{.}} 500w{{- end -}}
+		{{- if ge $src.Width "587" -}}
+		{{- with $tiny_w.RelPermalink -}}, {{.}} 587w{{- end -}}
 		{{- end -}}
 		{{- if ge $src.Width "800" -}}
 		{{- with $small_w.RelPermalink -}}, {{.}} 800w{{- end -}}
@@ -63,13 +61,14 @@
 		{{- with $large_w.RelPermalink -}}, {{.}} 1500w {{- end -}}
 		{{- end -}}'>
 	<img
+	  width="{{ $src.Width }}" height="{{ $src.Height }}"
 	  {{ with .Scratch.Get "sizes" }}sizes='{{.}}'{{ else }}sizes="(min-width: 35em) 1200px, 100vw"{{ end }}
 	  srcset='
-	  {{- if ge $src.Width "250" -}}
-		{{- with $micro_s.RelPermalink -}}{{.}} 250w{{- end -}}
+	  {{- if ge $src.Width "290" -}}
+		{{- with $micro_s.RelPermalink -}}{{.}} 290w{{- end -}}
 	  {{- end -}}
-		{{- if ge $src.Width "500" -}}
-		{{- with $tiny_s.RelPermalink -}}, {{.}} 500w{{- end -}}
+	  {{- if ge $src.Width "587" -}}
+		{{- with $tiny_s.RelPermalink -}}, {{.}} 587w{{- end -}}
 		{{- end -}}
 	  {{- if ge $src.Width "800" -}}
 		{{- with $small_s.RelPermalink -}}, {{.}} 800w{{- end -}}
