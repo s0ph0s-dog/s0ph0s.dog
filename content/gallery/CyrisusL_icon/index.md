@@ -1,6 +1,6 @@
 +++
 title = "CyrisusL Icon"
-date = 2021-09-04T18:30:42-04:00
+date = 2020-01-04T12:41:42-05:00
 tags = ["icon", "cyrisusl"]
 audio = []
 images = ["S0ph0s Icon.png"]
