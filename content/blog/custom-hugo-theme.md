@@ -2,7 +2,7 @@
 title = "Custom Hugo Themes"
 date = "2021-08-28T22:52:22-04:00"
 draft = "true"
-tags = ["meta", "hugo", "design", "webdev"]
+tags = ["meta", "design", "webdev"]
 +++
 
 Creating a Hugo theme from scratch is refreshingly easy, and well worth the time I invested into it.
