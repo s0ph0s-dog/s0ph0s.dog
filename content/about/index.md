@@ -16,7 +16,7 @@ I'm a 23-year-old timberwolf who lives in upstate New York.  My pronouns are he/
 
 # What I Do
 
-I just graduated and I don't have a job yet!  If you're hiring wolves with Master's degrees in computer science (security focus) who have 9+ years of programming experience and 2+ years of industry experience (in C# and C), [send me a Telegram please :3](https://t.me/s0ph0s)
+I'm a software engineer for an FPGA vendor, where I work on a C++ to Verilog compiler.  I eat undefined behavior for breakfast!  (And also lunch, and sometimes dinner. It's not healthy.)
 
 Outside of regular employment, I volunteer as a software developer and occasional sysadmin for the [XBN podcast network][xbn].  I've written [IRC bots][xana], [metadata management systems][gelo], and [post-production tools][postshow].
 
