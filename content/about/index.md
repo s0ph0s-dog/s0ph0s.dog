@@ -49,6 +49,7 @@ Sometimes, four limbs isn't enough.  I also have a taur variant, although the bo
 ## References
 
 {{< singlefig
+	sizes="(min-width: 700px) 587px, calc(93.42vw - 48px)"
 	src="img/silver_edge_refsheet.png"
 	link="/gallery/silver_edge_refsheet/"
 	alt="Character reference sheet depicting two full-body poses and two expression headshots.  The full-body poses show fur patterns on the front and back of the wolf.  The first expression headshot shows the wolf giving a sultry stare while licking his chops.  The second expression headshot shows the wolf blushing and splaying his ears."
@@ -57,21 +58,25 @@ Sometimes, four limbs isn't enough.  I also have a taur variant, although the bo
 
 {{< grid >}}
 {{< singlefig
+	sizes="(min-width: 700px) 290px, calc(46.84vw - 29px)"
 	src="img/wallpaper2you_154840.jpg"
 	caption="Wolf reference № 1 [(source)](https://www.desktopbackground.org/wallpaper/other-leader-white-quotes-timber-lone-wolf-pack-wolves-black-710373)"
 	>}}
 
 {{< singlefig
+	sizes="(min-width: 700px) 290px, calc(46.84vw - 29px)"
 	src="img/497901-black-wolf-wallpapers-1920x1200-samsung.jpg"
 	caption="Wolf reference № 2 [(source)](https://wallpapersafari.com/w/DW6riz)"
 	>}}
 
 {{< singlefig
+	sizes="(min-width: 700px) 290px, calc(46.84vw - 29px)"
 	src="img/49846223821_1f3b5f6f57_b.jpg"
 	caption="Wolf reference № 3 [(source: My Planet Experience on Flickr)](https://www.flickr.com/photos/myplanetexperience/49846223821)"
 	>}}
 
 {{< singlefig
+	sizes="(min-width: 700px) 290px, calc(46.84vw - 29px)"
 	src="img/1200px-Canis_lupus_lycaon_qtl4.jpg"
 	caption="Wolf reference № 4 [(source: Quartl on Wikipedia)](https://en.wikipedia.org/wiki/File:Canis_lupus_lycaon_qtl4.jpg)"
 	>}}
