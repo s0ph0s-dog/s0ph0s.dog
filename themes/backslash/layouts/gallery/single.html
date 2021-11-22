@@ -1,6 +1,7 @@
 {{ define "main" }}
 {{ .Scratch.Set "src" .Page.Params.main_image }}
 {{ .Scratch.Set "alt" .Page.Params.main_image_alttext }}
+{{ .Scratch.Set "sizes" "(min-width: 700px) 591px, calc(93.42vw - 44px)" }}
 {{ partial "picture" . }}
 <div class="gallery-buttons">
 	{{ with .PrevInSection }}
