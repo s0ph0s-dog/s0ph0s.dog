@@ -64,22 +64,22 @@
 	  width="{{ $src.Width }}" height="{{ $src.Height }}"
 	  {{ with .Scratch.Get "sizes" }}sizes='{{.}}'{{ else }}sizes="(min-width: 35em) 1200px, 100vw"{{ end }}
 	  srcset='
-	  {{- if ge $src.Width "290" -}}
+	  {{- if gt $src.Width "290" -}}
 		{{- with $micro_s.RelPermalink -}}{{.}} 290w{{- end -}}
 	  {{- end -}}
-	  {{- if ge $src.Width "587" -}}
+	  {{- if gt $src.Width "587" -}}
 		{{- with $tiny_s.RelPermalink -}}, {{.}} 587w{{- end -}}
 		{{- end -}}
-	  {{- if ge $src.Width "800" -}}
+	  {{- if gt $src.Width "800" -}}
 		{{- with $small_s.RelPermalink -}}, {{.}} 800w{{- end -}}
 	  {{- end -}}
-	  {{- if ge $src.Width "1200" -}}
+	  {{- if gt $src.Width "1200" -}}
 		{{- with $medium_s.RelPermalink -}}, {{.}} 1200w{{- end -}}
 	  {{- end -}}
-	  {{- if ge $src.Width "1500" -}}
+	  {{- if gt $src.Width "1500" -}}
 		{{- with $large_s.RelPermalink -}}, {{.}} 1500w {{- end -}}
-	  {{- end -}}, {{ $src }}'
-		{{ if ge $src.Width "1200" }}
+	  {{- end -}}, {{ $src }} {{ $src.Width }}w'
+	  {{ if gt $src.Width "1200" }}
 		src="{{ $medium_s.RelPermalink }}"
 	  {{ else }}
 		src="{{ $src.RelPermalink }}"
