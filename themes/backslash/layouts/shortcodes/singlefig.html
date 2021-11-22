@@ -8,7 +8,7 @@
 	{{ $.Scratch.Set "alt" . }}
 	{{ end }}
 	{{ with .Get "sizes" }}
-	{{ $.Scratch.Set "sizes" }}
+	{{ $.Scratch.Set "sizes" . }}
 	{{ end }}
 	{{ with .Get "webp_mode" }}
 	{{ $.Scratch.Set "webp_mode" }}
