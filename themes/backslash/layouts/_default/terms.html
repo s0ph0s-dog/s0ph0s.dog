@@ -1,0 +1,18 @@
+{{ define "main" }}
+<h1 class="title">{{ .Title }}</h1>
+{{ range .Pages.ByTitle }}
+	<div>
+	<h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+	<p>{{ if eq (len .Pages) 1 }}
+		1 post:
+	{{ else }}
+		{{ .Pages | len }} posts, including:
+	{{ end -}}
+	{{ range $index, $page := (.Pages.ByPublishDate.Reverse | first 3) }}
+		{{- if $index -}}, {{ end -}}
+		<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+	{{- end -}}
+	</p>
+	</div>
+{{ end }}
+{{ end }}
