@@ -1,12 +1,17 @@
 {{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Scratch.Get "src")) }}
 
 {{ $thumbnail_s := $src.Resize "290x" }}
+{{ $thumbnail_half_s := $src.Resize "126x" }}
 {{ $thumbnail_w := $src.Resize "290x webp" }}
+{{ $thumbnail_half_w := $src.Resize "126x webp" }}
 
 <picture>
-	<source	srcset='{{- $thumbnail_w.RelPermalink }} 290w'>
+	<source	srcset='{{- $thumbnail_half_w.RelPermalink }} 126w, {{- $thumbnail_w.RelPermalink }} 290w'
+			sizes="(min-width: 680px) 290px, calc(48.33vw - 29px)">
 	<img
 		width="{{ $thumbnail_s.Width }}"
 		height="{{ $thumbnail_s.Height }}"
+		sizes="(min-width: 680px) 290px, calc(48.33vw - 29px)"
+		srcset="{{- $thumbnail_half_s.RelPermalink }} 126w, {{- $thumbnail_s.RelPermalink }} 290w"
 		src="{{ $thumbnail_s.RelPermalink }}" />
 </picture>
