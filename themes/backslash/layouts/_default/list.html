@@ -1,12 +1,16 @@
 {{ define "main" }}
+{{ if eq .Kind "term" }}
+<h1 class="title">Tagged with “{{ .Title }}”</h1>
+{{ else }}
 <h1 class="title">{{ .Title }}</h1>
+{{ end }}
 {{ range .Pages.ByPublishDate.Reverse }}
     <article>
     <h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
     {{ partial "metadata.html" . }}
-    <a class="summary" href="{{ .RelPermalink }}">
-        {{ .Summary }}
-    </a>
+    <p><a class="summary" href="{{ .RelPermalink }}">
+            {{ .Summary | plainify }}
+    </a></p>
     </article>
 {{ end }}
 {{ end }}
