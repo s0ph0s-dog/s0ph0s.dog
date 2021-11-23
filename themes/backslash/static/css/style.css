@@ -139,7 +139,7 @@ a:active {
 	color: var(--green-light);
 }
 
-.summary, .summary:visited {
+a.summary, a.summary:visited {
 	color: var(--fg-light);
 	text-decoration: none;
 }
