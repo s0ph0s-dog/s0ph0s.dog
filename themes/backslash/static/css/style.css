@@ -139,6 +139,24 @@ a:active {
 	color: var(--green-light);
 }
 
+a.title:active h3 {
+	color: var(--green-light) !important;
+}
+
+.summary, .summary:visited {
+	color: var(--fg-light);
+	text-decoration: none;
+}
+
+article {
+	border-bottom: 1px solid var(--secondary-light);
+	margin-top: 1em;
+}
+
+article:last-child {
+	border-bottom: none;
+}
+
 figure,
 img {
 	max-width: 100%;
@@ -249,10 +267,21 @@ footer p {
 		color: var(--green-dark);
 	}
 
+	a.title:active h3 {
+		color: var(--green-dark) !important;
+	}
+
+	a.summary, a.summary:visited {
+		color: var(--fg-dark);
+	}
+
 	.gallery-list-item a:visited h3 {
 		color: var(--gold-dark);
 	}
 
+	article {
+		border-bottom: 1px solid var(--secondary-dark);
+	}
 
 	footer {
 		background-color: var(--secondary-dark);
