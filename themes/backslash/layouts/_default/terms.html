@@ -3,8 +3,12 @@
 {{ range .Pages.ByTitle }}
 	<div>
 	<h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-	<p>{{ if eq (len .Pages) 1 }}
+	<p>{{ if eq (len .Pages) 0 }}
+		0 posts
+	{{ else if eq (len .Pages) 1 }}
 		1 post:
+	{{ else if and (ge (len .Pages) 2) (le (len .Pages) 3)}}
+		{{ .Pages | len }} posts:
 	{{ else }}
 		{{ .Pages | len }} posts, including:
 	{{ end -}}
