@@ -174,6 +174,23 @@ figcaption {
 	gap: 0.25em;
 }
 
+li {
+	margin-bottom: 0.5em;
+}
+
+li:last-child {
+	margin-bottom: 1em;
+}
+
+.footnotes {
+	font-size: 0.875em;
+}
+
+hr {
+	border: 1px solid var(--secondary-light);
+	margin-bottom: 0.5em;
+}
+
 .height-fix {
 	min-height: calc(100vh - 10em);
 }
@@ -275,8 +292,12 @@ footer p {
 		color: var(--gold-dark);
 	}
 
-	.galler-list-item a:active h3 {
+	.gallery-list-item a:active h3 {
 		color: var(--green-dark);
+	}
+
+	hr {
+		border: 1px solid var(--secondary-dark);
 	}
 
 	article {
