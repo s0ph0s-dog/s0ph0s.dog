@@ -129,6 +129,10 @@
         height: 35vh;
       }
 
+      .primary-nav-link svg {
+        display: none;
+      }
+
       main {
         margin-left: -5rem;
         margin-right: 0;
@@ -175,7 +179,7 @@
           {{ range .Site.Menus.main }}
           <li>
             {{- $text := print .Name | safeHTML -}}
-            <a href="{{ .URL }}" title="{{ $text }}">
+            <a href="{{ .URL }}" title="{{ $text }}" class="primary-nav-link">
               {{ with .Pre }}
               {{ partial "svg" . }}
               {{ else }}
