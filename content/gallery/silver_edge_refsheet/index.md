@@ -8,7 +8,6 @@ videos = []
 main_image = "silver_edge_refsheet.png"
 main_image_alttext = "Character reference sheet depicting two full-body poses and two expression headshots.  The full-body poses show fur patterns on the front and back of the wolf.  The first expression headshot shows the wolf giving a sultry stare while licking his chops.  The second expression headshot shows the wolf blushing and splaying his ears."
 main_image_source = "https://www.furaffinity.net/view/43535943/"
-draft = "true"
 +++
 
 My first for-real ref sheet!  I had a color-your-own ref sheet before this one, but Silver Edge did a way better job :P
