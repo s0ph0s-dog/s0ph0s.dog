@@ -1,7 +1,7 @@
 +++
 title = "NixOS on the ROCKpro64"
 date = "2021-10-14T03:07:50-04:00"
-tags = ["sysadmin" "linux"]
+tags = ["sysadmin", "linux"]
 audio = []
 images = []
 videos = []

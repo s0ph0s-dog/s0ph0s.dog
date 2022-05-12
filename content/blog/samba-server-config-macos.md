@@ -1,5 +1,5 @@
 +++
-title = "Samba Server Config for macOS"
+title = "Samba Server Config for macOS & iOS"
 date = "2021-11-14T17:50:24-05:00"
 lastmod = "2021-11-51T11:51:00-04:00"
 tags = ["sysadmin", "linux"]
@@ -12,7 +12,7 @@ I needed to figure out how to configure Samba to serve files to macOS clients, a
 
 <!--more-->
 
-Information in this post is based on NixOS 21.05, Samba 4.14.4, Avahi 0.8, and macOS 11.6 (Big Sur).
+Information in this post is based on NixOS 21.05, Samba 4.14.4, Avahi 0.8, iOS 15.1, and macOS 11.6 (Big Sur).
 
 # ZFS
 
@@ -24,7 +24,7 @@ The Samba file server requires rather a lot of additional configuration in order
 
 Globally:
 
-* `min protocol = SMB3` — Unless you need to support spectacularly old products, SMB3 improves security and speed.
+* `min protocol = SMB2` — Setting this to `SMB3` breaks compatibility with the Files app on iOS.  If you try, you'll get a UIAlert that says "Operation not supported." when you connect.
 * `use sendfile = yes` — Uses the `sendfile` syscall to speed up data transfers.
 * `vfs objects = acl_xattr catia fruit streams_xattr` — Enables four plugins on every share.  If having all of these on every share is not what you want, you can specify the `vfs objects` key per-share.  `acl_xattr` and `streams_xattr` improve support for macOS's extended attributes. `catia` is nominally for a specific 3D design software, but it seems to be beneficial. `fruit` is for all of the Apple-specific optimizations and features.
 * `fruit:advertise_fullsync = true` — Turns on advertisements for a feature that improves the performance of Time Machine backups.
