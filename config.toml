@@ -48,6 +48,6 @@ uri = "https://s0ph0s.dog/"
     weight = 2
   [[menu.contact]]
     name = "Email"
-    url = "mailto:s0ph0s@protonmail.com"
+    url = "mailto:awoo@s0ph0s.dog"
     pre = "email"
     weight = 3
