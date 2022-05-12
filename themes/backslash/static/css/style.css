@@ -171,7 +171,7 @@ figcaption {
 .grid-2 {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 0.25em;
+	gap: 2.25em 1em;
 }
 
 li {
@@ -251,6 +251,14 @@ footer p {
 
 .gallery-title {
 	margin-top: 0.5em;
+}
+
+.smut-link {
+	margin-top: 2em;
+}
+
+.smut-link a {
+	font-size: 0.75em;
 }
 
 @media(prefers-color-scheme: dark) {
