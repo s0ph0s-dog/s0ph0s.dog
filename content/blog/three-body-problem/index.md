@@ -6,11 +6,8 @@ audio = []
 images = []
 videos = []
 draft = "true"
+summary = "Recommended if you like Orson Scott Card's work, skip if you would be upset by descriptions of the cultural revolution in China."
 +++
-
-I found the first part of this trilogy in a small bookshop in Duck, North Carolina.  The striking green spine, the TOR imprint, and the allusion to physics piqued my curiosity.  Three books later, I can confidently say that picking the book up was an excellent decision.
-
-<!--more-->
 
 # Recommendation
 

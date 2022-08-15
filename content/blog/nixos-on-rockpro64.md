@@ -6,11 +6,8 @@ audio = []
 images = []
 videos = []
 draft = "true"
+summary = "In which a wolf learns how to get NixOS 2021.5 to boot successfully on the ROCKpro64."
 +++
-
-Wherein a wolf learns how to get NixOS 2021.5 to boot successfully on the ROCKpro64.
-
-<!--more-->
 
 # Introduction
 

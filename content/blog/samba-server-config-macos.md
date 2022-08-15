@@ -6,11 +6,8 @@ tags = ["sysadmin", "linux"]
 audio = []
 images = []
 videos = []
+summary = "Describing recommended configuration for a Samba server intended to work with macOS clients and Time Machine."
 +++
-
-I needed to figure out how to configure Samba to serve files to macOS clients, and to accept Time Machine backups.
-
-<!--more-->
 
 Information in this post is based on NixOS 21.05, Samba 4.14.4, Avahi 0.8, iOS 15.1, and macOS 11.6 (Big Sur).
 

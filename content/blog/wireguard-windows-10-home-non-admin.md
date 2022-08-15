@@ -5,11 +5,8 @@ tags = ["sysadmin", "windows"]
 audio = []
 images = []
 videos = []
+summary = "The extra stuff you need to know to get WireGuard working on Windows 10 Home without any other Windows sysadmin experience."
 +++
-
-Here's the extra stuff you need to know to get WireGuard working on Windows 10 Home without having any other Windows administration experience.
-
-<!--more-->
 
 This information is based on [a mailing list message by Jason Donenfeld][email], the author of WireGuard, and [a StackOverflow answer by tromlet](https://superuser.com/a/1657595).  It only works for WireGuard versions 0.3.1 and newer.  By the time of writing this, 0.3.1 is several minor versions out of date, so basically any WireGuard installation should be fine.  Should :P
 
