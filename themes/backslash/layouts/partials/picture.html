@@ -42,7 +42,7 @@
 {{/* set the sizes attribute to (min-width: 35em) 1200px, 100vw unless overridden in shortcode */}}
 
 <picture>
-	<source
+	<source type="image/webp"
 	  {{ with .Scratch.Get "sizes" }}sizes='{{.}}'{{ else }}sizes="(min-width: 35em) 1200px, 100vw"{{ end }}
 		srcset='
 		{{- if ge $src.Width "290" -}}
