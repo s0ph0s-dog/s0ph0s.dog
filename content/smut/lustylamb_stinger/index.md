@@ -7,7 +7,7 @@ images = ["/smut/lustylamb_stinger/S0PH0S 11-18.png"]
 videos = []
 main_image = "S0PH0S 11-18.png"
 main_image_alttext = "Flat-colored sketch commission with four scenes, featuring s0ph0s (wearing a purple chastity cage, along with purple and black striped stockings and arm warmers), Scaltrox (a blue and teal Western dragon), and Muruski (an orange and black tiger with dark blue-green accents).  The first scene depicts all three snuggling side-by-side.  s0ph0s asks Muruski to sting him.  The second scene shows s0ph0s' bust as Muruski's aphrodisiac tail stinger sticks into his neck.  The third scene shows s0ph0s blushing profusely and leaking as Muruski rides his ass and Scaltrox fucks his muzzle.  The fourth scene shows all three snuggling again, but this time with dripping erections, and with Scaltrox's and Muruski's tails curled over s0ph0s."
-main_image_source = "https://www.furaffinity.net/view/45187022/"
+main_image_source = "https://www.furaffinity.net/view/49943813/"
 type = "gallery"
 +++
 
