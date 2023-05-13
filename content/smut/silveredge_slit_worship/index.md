@@ -1,5 +1,5 @@
 +++
-title = "SilverEdge Slit Worship"
+title = "Slit Worship by SilverEdge"
 date = "2022-11-18T10:24:32-05:00"
 tags = ["silveredge", "scaltrox", "slit"]
 audio = []

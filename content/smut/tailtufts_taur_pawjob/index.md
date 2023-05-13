@@ -1,5 +1,5 @@
 +++
-title = "Tailtufts Taur Pawjob"
+title = "Pawing Off by Tailtufts"
 date = "2022-05-31T16:20:53-05:00"
 tags = ["Tailtufts", "taur"]
 audio = []

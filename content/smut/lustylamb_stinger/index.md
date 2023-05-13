@@ -1,5 +1,5 @@
 +++
-title = "LustyLamb Stinger"
+title = "Stinger by LustyLamb"
 date = "2022-11-20T14:39:30-05:00"
 tags = ["comic", "lustylamb", "stinger"]
 audio = []
@@ -11,4 +11,6 @@ main_image_source = "https://www.furaffinity.net/view/49943813/"
 type = "gallery"
 +++
 
-A lovely mini-comic by [LustyLamb](https://www.furaffinity.net/user/lustylamb)!<!--more--> I had this idea very shortly after Muruski told me about his tail stinger with aphrodisiac venom, and I couldn't be happier with how Lamb brought it to life—It's both adorable and kinky :3
+A lovely mini-comic by [LustyLamb](https://www.furaffinity.net/user/lustylamb)!<!--more-->
+
+I had this idea very shortly after Muruski told me about his tail stinger with aphrodisiac venom, and I couldn't be happier with how Lamb brought it to life—It's both adorable and kinky :3
