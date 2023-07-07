@@ -1,7 +1,7 @@
 +++
 title = "MCMadMissile Alien Werewolf Ref"
 date = "2023-05-12T21:38:01-04:00"
-tags = ["mcmadmissile", "alien_werewolf", "refsheet"]
+horny_tags = ["mcmadmissile", "alien_werewolf", "refsheet"]
 audio = []
 images = ["/smut/mcmadmissile_alien_werewolf_ref/sophos_nsfw_lowres.png"]
 videos = []

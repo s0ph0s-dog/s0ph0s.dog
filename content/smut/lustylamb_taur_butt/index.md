@@ -1,7 +1,7 @@
 +++
 title = "Junk in the Trunk by LustyLamb"
 date = "2023-04-21T13:50:09-04:00"
-tags = ["lustylamb", "taur", "donut", "hyper"]
+horny_tags = ["lustylamb", "taur", "donut", "hyper"]
 audio = []
 images = ["/smut/lustylamb_taur_butt/s0ph0s QS 4-17.png"]
 videos = []

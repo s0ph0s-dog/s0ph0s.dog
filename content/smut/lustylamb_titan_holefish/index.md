@@ -1,7 +1,7 @@
 +++
 title = "Tight Holefish by LustyLamb"
 date = "2022-12-11T16:39:48-05:00"
-tags = ["lustylamb", "titan_holefish", "taur", "hyper"]
+horny_tags = ["lustylamb", "titan_holefish", "taur", "hyper"]
 audio = []
 images = ["/smut/lustylamb_titan_holefish/thumbnail.webp"]
 videos = []

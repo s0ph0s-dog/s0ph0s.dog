@@ -1,7 +1,7 @@
 +++
 title = "Frotting by Tailtufts"
 date = "2023-04-21T17:09:34-04:00"
-tags = ["scaltrox", "frotting", "tailtufts"]
+horny_tags = ["scaltrox", "frotting", "tailtufts"]
 audio = []
 images = ["/smut/tailtufts_frotting/frottingcomm_s0ph0schestfix.png"]
 videos = []

@@ -1,7 +1,7 @@
 +++
 title = "Christmas YCH by Katarhein"
 date = "2021-12-27T12:41:42-05:00"
-tags = ["pinup", "katarhein"]
+horny_tags = ["pinup", "katarhein"]
 audio = []
 images = ["/smut/katarhein_christmas/Xmas Gift 4 by Katarhein@0.5x.jpg"]
 videos = []

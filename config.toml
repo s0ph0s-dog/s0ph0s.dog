@@ -2,12 +2,17 @@ baseURL = 'https://s0ph0s.dog/'
 languageCode = 'en-us'
 title = 's0ph0s'
 theme = 'backslash'
-copyright = "© 2021 s0ph0s"
+copyright = "© 2023 s0ph0s"
 
 [author]
 name = "s0ph0s"
 email = "s0ph0s@protonmail.com"
 uri = "https://s0ph0s.dog/"
+
+[taxonomies]
+category = 'categories'
+horny_tags = 'horny_tags'
+tag = 'tags'
 
 [menu]
   [[menu.main]]

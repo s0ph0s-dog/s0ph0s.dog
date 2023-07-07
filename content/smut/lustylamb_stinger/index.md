@@ -1,7 +1,7 @@
 +++
 title = "Stinger by LustyLamb"
 date = "2022-11-20T14:39:30-05:00"
-tags = ["comic", "lustylamb", "stinger"]
+horny_tags = ["comic", "lustylamb", "stinger"]
 audio = []
 images = ["/smut/lustylamb_stinger/S0PH0S 11-18.png"]
 videos = []

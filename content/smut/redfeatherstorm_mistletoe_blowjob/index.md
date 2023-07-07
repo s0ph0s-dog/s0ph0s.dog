@@ -1,7 +1,7 @@
 +++
 title = "Sucking Under the Mistletoe by RedFeatherStorm"
 date = "2022-12-24T17:09:30-05:00"
-tags = ["redfeatherstorm", "mistletoe", "scaltrox"]
+horny_tags = ["redfeatherstorm", "mistletoe", "scaltrox"]
 audio = []
 images = ["/smut/lustylamb_titan_holefish/s0ph0s.png"]
 videos = []

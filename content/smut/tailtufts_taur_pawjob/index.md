@@ -1,7 +1,7 @@
 +++
 title = "Pawing Off by Tailtufts"
 date = "2022-05-31T16:20:53-05:00"
-tags = ["Tailtufts", "taur"]
+horny_tags = ["Tailtufts", "taur"]
 audio = []
 images = ["/smut/tailtufts_taur_pawjob/1_s0ph0sweb.png"]
 videos = []

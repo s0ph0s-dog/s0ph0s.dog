@@ -9,4 +9,10 @@ Tags: {{ with .Params.tags }}
 <a href="{{ $href }}/">{{ . }}</a>
 {{ end }}
 {{ end }}
+{{ with .Params.horny_tags }}
+{{ range . }}
+{{ $href := print (absURL "horny_tags/") (urlize .) }}
+<a href="{{ $href }}/">{{ . }}</a>
+{{ end }}
+{{ end }}
 </p>
