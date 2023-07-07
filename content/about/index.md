@@ -47,6 +47,8 @@ Sometimes, four limbs isn't enough.  I also have a taur variant, although the bo
 
 ## References
 
+{{< button link="/gallery/silver_edge_refsheet/silver_edge_refsheet.png" text="Download Full Size PNG" >}}
+
 {{< singlefig
 	sizes="(min-width: 700px) 587px, calc(93.42vw - 48px)"
 	src="img/silver_edge_refsheet.png"

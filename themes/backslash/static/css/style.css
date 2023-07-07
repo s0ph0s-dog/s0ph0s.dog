@@ -249,6 +249,17 @@ footer p {
 	font-size: 0.75em;
 }
 
+.button:hover {
+	background-color: var(--purple-dark)
+}
+
+.button.big {
+	width: auto;
+	padding: 0.5em 1rem 0.5em 1rem;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
 .gallery-title {
 	margin-top: 0.5em;
 }
