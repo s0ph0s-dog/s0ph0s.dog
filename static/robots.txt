@@ -43,6 +43,9 @@ User-agent: Twitterbot
 Disallow: /
 DisallowAITraining: /
 
+User-agent: *
+Disallow: /smut/
+
 User-Agent: FacebookBot
 User-Agent: Meta-ExternalFetcher
 User-Agent: Meta-ExternalAgent
