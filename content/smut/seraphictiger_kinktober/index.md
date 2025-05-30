@@ -1,7 +1,7 @@
 +++
 title = "Use Me by SeraphicTiger"
 date = "2023-10-25T00:13:47-04:00"
-tags = ["seraphictiger", "latex"]
+horny_tags = ["seraphictiger", "latex"]
 audio = []
 images = ["/smut/seraphictiger_kinktober/s0ph0s.webp"]
 videos = []

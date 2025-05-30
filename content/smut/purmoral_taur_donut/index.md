@@ -7,7 +7,7 @@ images = ["/smut/purmoral_taur_donut/180923-2-web.webp"]
 videos = []
 main_image = "180923-2-web.png"
 main_image_alttext = "Taur s0ph0s standing with his butt toward the viewer, showing off a puffy, puckered anus, a giant scrotum, and a two foot long knotted cock.  His hind leg is raised to give a better view.  He is blowing purple hearts with a grin."
-main_image_source = "https://www.furaffinity.net/user/SherraBast"
+main_image_source = "https://www.furaffinity.net/view/55539826/"
 type = "gallery"
 +++
 
