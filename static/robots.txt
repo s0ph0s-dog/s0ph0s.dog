@@ -1,5 +1,81 @@
+User-Agent: *
+DisallowAITraining: /
+Content-Usage: ai=n
+Allow: /
+
 User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: OAI-SearchBot
 Disallow: /
+DisallowAITraining: /
 
 User-agent: Google-Extended
+User-agent: GoogleOther
+User-agent: GoogleOther-Image
+User-agent: GoogleOther-Video
 Disallow: /
+DisallowAITraining: /
+
+User-agent: BingAI
+User-agent: Bingbot-chat
+Disallow: /
+DisallowAITraining: /
+
+User-agent: CCBot
+Disallow: /
+DisallowAITraining: /
+
+User-agent: PerplexityBot
+Disallow: /
+DisallowAITraining: /
+
+User-agent: anthropic-ai
+User-agent: Claude-Web
+User-agent: ClaudeBot
+Disallow: /
+DisallowAITraining: /
+
+User-agent: Amazonbot
+Disallow: /
+DisallowAITraining: /
+
+User-agent: Twitterbot
+Disallow: /
+DisallowAITraining: /
+
+User-Agent: FacebookBot
+User-Agent: Meta-ExternalFetcher
+User-Agent: Meta-ExternalAgent
+User-agent: facebookexternalhit
+Disallow: /
+DisallowAITraining: /
+
+User-Agent: Applebot
+User-Agent: Applebot-Extended
+Disallow: /
+DisallowAITraining: /
+
+User-agent: YouBot
+User-agent: Bytespider
+User-agent: Diffbot
+User-agent: DuckAssistBot
+User-agent: Kangaroo Bot
+User-agent: PanguBot
+User-agent: omgili
+User-agent: Omgilibot
+User-agent: cohere-ai
+User-agent: cohere-training-data-crawler
+User-agent: Ai2Bot
+User-agent: Ai2Bot-Dolma
+User-agent: FriendlyCrawler
+User-agent: ICC-Crawler
+User-agent: ImagesiftBot
+User-agent: PetalBot
+User-agent: Scrapy
+User-agent: Timpibot
+User-agent: VelenPublicWebCrawler
+User-agent: Webzio-Extended
+User-agent: img2dataset
+User-Agent: SemrushBot-OCOB
+Disallow: /
+DisallowAITraining: /
