@@ -1,0 +1,21 @@
+{{/* get file that matches the filename as specified as src="" in scratch */}}
+{{ $src_h264 := .Page.Resources.GetMatch (printf "*%s*" (.Scratch.Get
+"src_h264")) }}
+{{ $codec_h264 := .Scratch.Get "codec_h264" }}
+{{ $src_h265 := .Page.Resources.GetMatch (printf "*%s*" (.Scratch.Get "src_h265")) }}
+{{ $src_av1 := .Page.Resources.GetMatch (printf "*%s*" (.Scratch.Get "src_av1")) }}
+{{ $codec_av1 := .Scratch.Get "codec_av1" }}
+{{ $poster := .Page.Resources.GetMatch (printf "*%s*" (.Scratch.Get "poster")) }}
+
+<video
+  controls
+  crossorigin="anonymous"
+  preload="metadata"
+  poster="{{ $poster.RelPermalink }}"
+>
+  <source type="video/mp4; codec='{{ $codec_av1 }}" src="{{ $src_av1 }}" />
+  <source type="video/mp4; codec='hvc1'" src="{{ $src_h265 }}" />
+  <source type="video/webm; codec='{{ $codec_h264 }}" src="{{ $src_h264 }}" />
+  Your browser doesn't support HTML video. Please try a recent version of
+  Safari, Firefox, or Chrome.
+</video>

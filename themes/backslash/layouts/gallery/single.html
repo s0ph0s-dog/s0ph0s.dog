@@ -1,8 +1,18 @@
 {{ define "main" }}
+{{ if .Page.Params.h264_video }}
+{{ .Scratch.Set "src_h264" .Page.Params.h264_video }}
+{{ .Scratch.Set "src_h265" .Page.Params.h265_video }}
+{{ .Scratch.Set "src_av1" .Page.Params.av1_video }}
+{{ .Scratch.Set "codec_h264" .Page.Params.av1_codec }}
+{{ .Scratch.Set "codec_av1" .Page.Params.av1_codec }}
+{{ .Scratch.Set "poster" .Page.Params.video_poster }}
+{{ partial "video" . }}
+{{ else }}
 {{ .Scratch.Set "src" .Page.Params.main_image }}
 {{ .Scratch.Set "alt" .Page.Params.main_image_alttext }}
 {{ .Scratch.Set "sizes" "(min-width: 700px) 591px, calc(93.42vw - 44px)" }}
 {{ partial "picture" . }}
+{{ end }}
 <div class="gallery-buttons">
 	{{ with .PrevInSection }}
 	<a class="button" aria-role="button" href="{{ .RelPermalink }}">← Older</a>
@@ -10,7 +20,7 @@
 	<span class="placeholder button"></span>
 	{{ end }}
 	<span class="centered">
-		<a class="button" href="{{ .Page.Params.main_image }}">Full Size</a>
+		<a class="button" href="{{ default .Page.Params.main_image .Page.Params.h264_video }}">Full Size</a>
 		<a class="button" href="{{ .Page.Params.main_image_source }}">Source</a>
 	</span>
 	{{ with .NextInSection }}
