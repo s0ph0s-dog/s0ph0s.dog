@@ -1,0 +1,13 @@
+<figure>
+	{{- if .Get "link" -}}
+	<a href="{{ .Get "link" }}">
+  {{- end -}}
+
+{{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
+<img
+  width="{{ $src.Width }}" height="{{ $src.Height }}"
+  src="{{ $src.RelPermalink }}"
+  {{ with .Scratch.Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}>
+	{{- if .Get "link" }}</a>{{ end -}}
+  <figcaption>{{- .Inner | markdownify -}}</figcaption>
+</figure>
