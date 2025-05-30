@@ -1,7 +1,7 @@
 +++
 title = "Samba Server Config for macOS & iOS"
 date = "2021-11-14T17:50:24-05:00"
-lastmod = "2021-11-51T11:51:00-04:00"
+lastmod = "2021-11-15T11:51:00-04:00"
 tags = ["sysadmin", "linux"]
 audio = []
 images = []
