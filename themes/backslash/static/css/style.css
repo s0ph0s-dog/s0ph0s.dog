@@ -25,6 +25,14 @@
 	margin: 0;
 }
 
+.rhythm-grid {
+    background-image: linear-gradient(to bottom,
+        rgba(0,0,0, 0.2) 0px,
+        rgba(0,0,0, 0.0) 1px
+    );
+    background-size: 100px 1rlh;
+}
+
 html,
 body {
 	height: 100%;
@@ -34,6 +42,7 @@ body {
 
 html {
 	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, sans-serif;
+	line-height: 1.5;
 }
 
 h1,
@@ -53,18 +62,16 @@ a {
 }
 
 h1 {
-	margin-top: 1em;
-	margin-bottom: 0.25em;
-}
-
-h1.title {
-	margin-top: 0;
-	font-size: 3rem;
+    font-size: 2em;
+    line-height: 3rem;
 }
 
 h2 {
-	margin-top: 0.5em;
-	margin-bottom: 0.25em;
+    line-height: 3rem;
+}
+
+h3 {
+    line-height: 1.5rem;
 }
 
 header {
@@ -81,7 +88,7 @@ a.nav-link,
 a.nav-link:visited {
 	font-weight: bold;
 	text-decoration: none;
-	margin-left: 0.75em;
+	margin-left: 0.75rlh;
 	color: var(--fg-dark);
 }
 
@@ -99,7 +106,7 @@ a.nav-link:hover {
 
 .container {
 	max-width: 65ch;
-	padding: 2em;
+	padding: 1rlh;
 	margin: 0 auto;
 }
 
@@ -111,20 +118,33 @@ header h1.site-title {
 .slashes {
 	vertical-align: baseline;
 	height: 0.85em;
-	/* TODO: delete this once Safari has aspect-ratio support */
 	width: 1.05em;
 	aspect-ratio: 119 / 96;
 	position: relative;
 	bottom: -2px;
 }
 
-.metadata {
-	font-size: 0.85rem;
+ul, ol {
+    padding-left: 1.5rlh;
 }
 
-p, ul, pre {
-	line-height: 1.4;
-	margin-bottom: 1rem;
+p, li, pre {
+	margin-bottom: 1rlh;
+    text-wrap: pretty;
+}
+
+sub, sup {
+    line-height: 0;
+    font-variant-numeric: lining-nums;
+}
+
+pre code {
+    line-height: 1.8;
+}
+
+hr {
+    /* The border is 2px tall so subtract 2px to avoid offsetting the rhythm. */
+    margin-bottom: calc(1rlh - 2px);
 }
 
 a:hover {
@@ -145,8 +165,10 @@ a.summary, a.summary:visited {
 }
 
 article {
-	border-bottom: 1px solid var(--secondary-light);
-	margin-top: 1em;
+	border-bottom: 1px solid var(--fg-light);
+    /* The border on the bottom is 1px tall so subtract 1px to avoid offsetting
+     * the rhythm. */
+	margin-bottom: calc(1rlh - 1px);
 }
 
 article:last-child {
@@ -154,14 +176,15 @@ article:last-child {
 }
 
 figure,
-img {
+img,
+video {
 	max-width: 100%;
 	height: auto;
 }
 
 figure {
-	margin-right: 0.25rem;
-	margin-top: 0.25rem;
+	margin-right: 0.25rlh;
+	margin-top: 0.25rlh;
 }
 
 figcaption {
@@ -174,21 +197,18 @@ figcaption {
 	gap: 2.25em 1em;
 }
 
-li {
-	margin-bottom: 0.5em;
-}
-
-li:last-child {
-	margin-bottom: 1em;
-}
-
 .footnotes {
 	font-size: 0.875em;
 }
 
+blockquote {
+    padding-left: 1rlh;
+    border-left: 0.25em solid var(--secondary-light);
+    font-style: italic;
+}
+
 hr {
-	border: 1px solid var(--secondary-light);
-	margin-bottom: 0.5em;
+	border: 1px solid var(--fg-light);
 }
 
 .height-fix {
@@ -198,7 +218,7 @@ hr {
 footer {
 	background-color: var(--secondary-light);
 	font-style: italic;
-	height: 10em;
+	height: 8rlh;
 	clip-path: polygon(0% 8vw,
 			100% 0%,
 			100% 100%,
@@ -222,7 +242,7 @@ footer p {
 }
 
 .gallery-list-item img {
-	margin-bottom: 0.5em;
+	margin-bottom: 0.5rlh;
 }
 
 .gallery-buttons {
@@ -261,11 +281,11 @@ footer p {
 }
 
 .gallery-title {
-	margin-top: 0.5em;
+	margin-top: 0.5rlh;
 }
 
 .smut-link {
-	margin-top: 2em;
+	margin-top: 2rlh;
 }
 
 .smut-link a {
@@ -315,12 +335,16 @@ footer p {
 		color: var(--green-dark);
 	}
 
+    blockquote {
+        border-left-color: var(--secondary-dark);
+    }
+
 	hr {
-		border: 1px solid var(--secondary-dark);
+		border: 1px solid var(--fg-dark);
 	}
 
 	article {
-		border-bottom: 1px solid var(--secondary-dark);
+		border-bottom: 1px solid var(--fg-dark);
 	}
 
 	footer {
@@ -334,7 +358,7 @@ footer p {
 	}
 
 	header {
-		padding-bottom: 2em;
+		padding-bottom: 2rlh;
 	}
 
 	footer p {

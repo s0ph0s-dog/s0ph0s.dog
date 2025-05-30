@@ -1,4 +1,4 @@
-<p class="metadata">
+<p class="metadata"><small>
 {{ .ReadingTime }} min.
 {{ $dateTime := .PublishDate.Format "2006-01-02" }}
 {{ $dateFormat := .Site.Params.dateFormat | default "2 Jan 2006" }}
@@ -15,4 +15,4 @@ Tags: {{ with .Params.tags }}
 <a href="{{ $href }}/">{{ . }}</a>
 {{ end }}
 {{ end }}
-</p>
+</small></p>
