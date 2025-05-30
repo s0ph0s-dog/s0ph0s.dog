@@ -9,15 +9,17 @@ videos = []
 layout = "about"
 +++
 
-I'm a 23-year-old timberwolf who lives in upstate New York.  My pronouns are he/him/his.  For work, I write code, usually JavaScript or Python.  For fun, I _also_ write code, as well as administer OpenBSD and Linux servers, pretend to be a graphic designer, and read a lot of books.
+I'm a 23-year-old timberwolf who lives in Toronto.  My pronouns are he/him/his.  For work, I write code, usually Python.  For fun, I _also_ write code, as well as administer OpenBSD and Linux servers, pretend to be a graphic designer, and read a lot of books.
 
 <!--more-->
 
 # What I Do
 
-I'm a software engineer for an FPGA vendor, where I work on developer tools for a C++ to Verilog compiler.  I eat undefined behavior for breakfast!  (And also lunch, and sometimes dinner. It's not healthy.)
+I was formerly a software engineer for an FPGA vendor, where I worked on developer tools for a C++ to Verilog compiler.  However, I'm currently available for hire!
 
 Outside of regular employment, I volunteer as a software developer and occasional sysadmin for the [XBN podcast network][xbn].  I've written [IRC bots][xana], [metadata management systems][gelo], and [post-production tools][postshow].
+
+My current major project is an art archiving tool called [Werehouse](https://github.com/s0ph0s-2/werehouse), which makes it easy to preserve art that you care about—and share it with proper artist attribution!
 
 
 # What I Enjoy
