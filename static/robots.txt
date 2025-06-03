@@ -82,3 +82,7 @@ User-agent: img2dataset
 User-Agent: SemrushBot-OCOB
 Disallow: /
 DisallowAITraining: /
+
+User-agent: rogerbot
+User-agent: dotbot
+Disallow: /
