@@ -284,12 +284,16 @@ footer p {
 	margin-top: 0.5rlh;
 }
 
-.smut-link {
-	margin-top: 2rlh;
+.pagination {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1lh;
+    margin-top: 1rlh;
 }
 
-.smut-link a {
-	font-size: 0.75em;
+.pagination li {
+    list-style-type: none;
 }
 
 @media(prefers-color-scheme: dark) {

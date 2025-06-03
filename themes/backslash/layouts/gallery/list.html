@@ -1,7 +1,8 @@
 {{ define "main" }}
 <h1 class="title">{{ .Title }}</h1>
 <div class="grid-2">
-	{{ range .Pages.ByPublishDate.Reverse }}
+	{{ $paginator := .Paginate .Pages.ByPublishDate.Reverse 20 }}
+	{{ range $paginator.Pages }}
 	<div class="gallery-list-item">
 		<a class="title" href="{{ .RelPermalink }}">
 			{{ .Scratch.Set "src" (default (.Param "main_image") (.Param "thumbnail_image")) }}
@@ -11,4 +12,5 @@
 	</div>
 	{{ end }}
 </div>
+{{ template "_internal/pagination.html" . }}
 {{ end }}
